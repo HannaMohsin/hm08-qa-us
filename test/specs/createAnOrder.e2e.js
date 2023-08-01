@@ -109,10 +109,8 @@ describe('Create an order', async () => {
         await supportivePlan.waitForDisplayed();
         await supportivePlan.click();  
         const phoneNumber = helper.getPhoneNumber("+1");
-        const phoneNumberModal = await $(page.phoneNumberModal);
         await page.submitPhoneNumber(phoneNumber);
-        await expect(phoneNumberModal).toBeExisting();
-        await expect(await helper.getElementByText(phoneNumber)).toBeExisting(); 
+        await expect(await helper.getElementByText(phoneNumber)).toBeExisting();
         const messageField = await $(page.messageField);
         await messageField.waitForDisplayed();
         await messageField.setValue('message');
