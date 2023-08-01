@@ -9,8 +9,26 @@ module.exports = {
     phoneNumberButton: '//div[starts-with(text(), "Phone number")]',
     nextButton: 'button=Next',
     confirmButton: 'button=Confirm',
+            // Supportive button
+            supportivePlan: 'div=Supportive',
     // Modals
     phoneNumberModal: '.modal',
+    paymentMethod: '.pp-text',
+addCard: '//div[starts-with(text(), "Add card")]',
+cardModal: '.card-wrapper',
+cardNumberField: '#number',
+cvc: '.card-second-row #code',
+linkButton: '//button[starts-with(text(), "Link")]',
+closeButton: '.payment-picker .close-button',
+cardStrip: '.plc',
+messageField: '#comment',
+//Blanket order
+orderReq: '//div[@class="reqs open"]',
+blanketAndHankey: '(//div[@class="r-sw-container"])',
+iceCreamCounter: '.counter-plus',
+iceCreamCount: '.counter-value',
+carSearchModal: '.order-body',
+orderButton: '.smart-button-main',
     // Functions
     fillAddresses: async function(from, to) {
         const fromField = await $(this.fromField);
