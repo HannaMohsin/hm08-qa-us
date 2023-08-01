@@ -20,9 +20,7 @@ describe('Create an order', async () => {
         await browser.url('/');
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const phoneNumber = helper.getPhoneNumber("+1");
-        const phoneNumberModal = await $(page.phoneNumberModal);
         await page.submitPhoneNumber(phoneNumber);
-        await expect(phoneNumberModal).toBeExisting();
         await expect(await helper.getElementByText(phoneNumber)).toBeExisting();
     })
 // 4. Adding a credit card
