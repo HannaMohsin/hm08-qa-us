@@ -20,7 +20,7 @@ exports.config = {
 ],
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'https://ca5440d2-f328-48f0-ae8e-86aeb9c97106.serverhub.tripleten-services.com',
+    baseUrl: 'https://dd7c18ac-2278-4b11-a4ec-c6118fa69640.serverhub.tripleten-services.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
